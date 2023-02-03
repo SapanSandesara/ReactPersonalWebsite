@@ -1,0 +1,38 @@
+@use '@carbon/react';
+
+@use '@carbon/react/scss/themes';
+
+
+$theme: themes.$g100;
+
+@use '@carbon/colors';
+
+// @use '@carbon/react';
+
+
+a {
+  color: #0b0b0b;
+}
+
+.bx--side-nav__navigation {
+  background-color: colors.$gray-100;
+}
+
+a.bx--side-nav__link--current,
+a.bx--side-nav__link--current > span.bx--side-nav__link-text {
+  background-color: colors.$gray-50;
+  color: #060505;
+}
+
+.bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link:hover {
+  background-color: colors.$gray-50;
+  color: #070606;
+}
+
+a.bx--side-nav__link > .bx--side-nav__link-text,
+.bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link:hover
+  > span {
+  color: #050505;
+}
